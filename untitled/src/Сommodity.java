@@ -7,7 +7,7 @@ public class Сommodity {
  String cost;
  int code;
  int amount;
- String newField; // Оголошення нового поля
+ String newField;
 
  public Сommodity(String name, String producer, String cost, int code, String expiration_date, int amount) {
   this.name = name;
@@ -18,11 +18,8 @@ public class Сommodity {
   this.amount = amount;
  }
 
- // Новий конструктор з іншою сигнатурою
  public Сommodity(String name, String producer, String cost, int code, String expiration_date, int amount, String newField) {
-  // Викликати існуючий конструктор
   this(name, producer, cost, code, expiration_date, amount);
-  // Ініціалізувати нове поле
   this.newField = newField;
  }
 
